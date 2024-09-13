@@ -1,27 +1,32 @@
-# JEST Unit Tests
+# Testes Unitários da Biblioteca
 
-## GitHub Actions
+## Começando
 
-[![Build and Tests](https://github.com/ugioni/unit-tests-jest/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/ugioni/unit-tests-jest/actions/workflows/node.js.yml)
+Para trabalhar com este projeto, siga os passos abaixo:
 
-## SonarCloud
+1. **Instale o Node.js**: Certifique-se de ter [Node.js](https://nodejs.org/) (versão >= 18.x) instalado em sua máquina.
+2. **Instale as Dependências**: Execute `npm install` para instalar todas as dependências do projeto.
+3. **Execute os Testes**: Execute `npm test` para rodar toda a suíte de testes e garantir que todas as funcionalidades da classe `Biblioteca` estão funcionando conforme o esperado.
+4. **Execute com Cobertura**: Execute `npm run coverage` para rodar toda a suíte de testes com relatório de cobertura, para verificar quais partes do seu código estão cobertas pelos testes.
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ugioni_unit-tests-jest&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ugioni_unit-tests-jest)
+Todos os artefatos de execução, incluindo relatórios de cobertura de testes, podem ser encontrados no diretório `./coverage`. Para limpar esses arquivos, execute `npm run clean`.
 
-## Getting Started
+## Estrutura do Projeto
 
-In order to execute this project you must follow the steps below:
+O projeto está estruturado da seguinte forma:
 
-1. Install [Node JS](https://nodejs.org/) (version >= 18.x)
-1. Run `npm install` to install all the project dependencies
-1. Run `npm run test` to execute the entire test suite
-1. Run `npm run coverage` to execute the entire test suite with coverage
+- **src**: Contém o código-fonte, incluindo a classe `Biblioteca`.
+- **test**: Contém arquivos de teste unitário para a classe `Biblioteca`.
 
-All execution artifacts can be found in `./coverage`, if you want to remove these files run `npm run clean`.
+## Testes
 
-## Project Structure
-</br>
-<ul>
-    <li>src: source code</li>
-    <li>test: unit test files</li>
-</ul>
+Os testes unitários são projetados para verificar a funcionalidade da classe `Biblioteca`. Os testes incluem:
+
+- Adicionar e remover livros e membros
+- Buscar livros e membros por ID
+- Listar livros por diferentes critérios (por exemplo, emprestados, disponíveis, autor, gênero)
+- Emprestar e devolver livros
+
+Para garantir que todas as funcionalidades estão funcionando corretamente, execute a suíte de testes com os comandos fornecidos acima.
+
+Para mais detalhes sobre como os testes são escritos e como adicionar novos testes, consulte os arquivos no diretório `test`.
